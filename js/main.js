@@ -175,3 +175,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Video background optimization
+document.addEventListener('DOMContentLoaded', function() {
+    const videoElements = document.querySelectorAll('.animation-box video');
+    
+    // Check if the browser supports the Intersection Observer API
+    if ('IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Play video when it comes into view
+                    entry.target.play();
+                } else {
+                    // Pause video when it's not in view
+                    entry.target.pause();
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        // Observe all video elements
+        videoElements.forEach(video => {
+            videoObserver.observe(video);
+        });
+    } else {
+        // Fallback for browsers that don't support Intersection Observer
+        videoElements.forEach(video => {
+            video.play();
+        });
+    }
+});
