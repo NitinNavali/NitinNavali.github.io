@@ -146,7 +146,7 @@ img {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("img/Background_2.png");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("js/img/Background_2.png");
     background-size: cover;
     background-position: center;
     display: flex;
