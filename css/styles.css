@@ -155,7 +155,8 @@ img {
 }
 
 .hero-content {
-    max-width: 800px;
+    float: left;
+    max-width: 700px;
 }
 
 .hero h1 {
@@ -175,9 +176,10 @@ img {
 }
 
 .background-image {
-    float: right; /* Aligns the image to the right */
-    margin-left: 20px; /* Adds some spacing between the text and the image */
+    float: right;
+    min-width: 300px;
 }
+
 
 
 /* About Section */
