@@ -524,3 +524,92 @@ img {
         padding: 10px 20px;
     }
 }
+
+
+/* Animated Background Section */
+.animated-bg {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0;
+}
+
+.animated-bg .section-title {
+    color: white;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.animation-box {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.animation-box:hover {
+    transform: translateY(-10px);
+}
+
+.animation-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animation-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.animation-box:hover .animation-overlay {
+    background: linear-gradient(transparent, rgba(var(--secondary-color-rgb), 0.9));
+}
+
+.animation-overlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.animation-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Add RGB value for secondary color to use in rgba */
+:root {
+    --secondary-color-rgb: 52, 152, 219; /* This is the RGB equivalent of #3498db */
+}
+
+/* Responsive design for animations */
+@media screen and (max-width: 992px) {
+    .animation-box {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .animation-container {
+        flex-direction: column;
+    }
+    
+    .animation-box {
+        min-width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
