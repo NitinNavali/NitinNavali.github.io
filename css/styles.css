@@ -146,7 +146,7 @@ img {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))), url('img/background-image.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))), url('js/img/Background_2.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -174,12 +174,6 @@ img {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
-
-.background-image {
-    float: right;
-    min-width: 300px;
-}
-
 
 
 /* About Section */
