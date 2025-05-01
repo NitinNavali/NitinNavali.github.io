@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // In a real project, you'd fetch the content via AJAX
             // For now, we'll just simulate with sample content
             const projectHTML = `
-                <h2>Project Title</h2>
+                <h2>Shipment Consolidation Analytics for a Leading Med Tech Company</h2>
                 <div class="project-media">
                     <video width="100%" controls>
-                        <source src="videos/sample-dashboard.mp4" type="video/mp4">
+                        <source src="js/ProjectFiles/P1/P1_GIF.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 
 // Video background optimization
 document.addEventListener('DOMContentLoaded', function() {
